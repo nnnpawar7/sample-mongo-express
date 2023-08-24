@@ -36,6 +36,7 @@ app.post("/register", (req, res, next) => __awaiter(void 0, void 0, void 0, func
         if (existingUsr) {
             res.status(400).send("email already taken");
         }
+        console.log(req.body);
         const user = yield db_1.usr.create(req.body);
         res.status(201).send(user);
     }

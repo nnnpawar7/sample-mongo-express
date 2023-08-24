@@ -23,6 +23,10 @@ export const db = mongoose
         type: String,
         required: true,
       },
+      marks:[{
+        subject: String,
+        mark: Number
+      }]
     });
     
     

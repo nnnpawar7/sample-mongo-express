@@ -22,6 +22,10 @@ const usrSchema = new mongoose_1.default.Schema({
         type: String,
         required: true,
     },
+    marks: [{
+            subject: String,
+            mark: Number
+        }]
 });
 exports.usr = mongoose_1.default.model("usr", usrSchema);
 //# sourceMappingURL=db.js.map
